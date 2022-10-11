@@ -6,7 +6,7 @@
     <title>何为？为何？</title>
     <link rel="shortcut icon" href="clockwise_vertical_arrows_3d.ico" type="image/x-icon">
     <script type="text/javascript" src="timeTo.js"></script>
-    
+
     <style>
         /*修改网页背景颜色*/
         body {
@@ -78,6 +78,7 @@
     (function () {      
         //获取目标时间
         var targetDate = new Date("2022-10-30 11:00:00");
+        document.getElementById("targetDate").innerHTML="2022-10-30 11:00:00";
         // 000表示每隔一秒变化一次，单位为毫秒
         countDown();
         // setInterval(countDown(targetDate) , 1000);
