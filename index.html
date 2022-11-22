@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- 修改网页页面标题 -->
@@ -10,15 +11,16 @@
     <style>
         /*修改网页背景颜色*/
         body {
-            background: skyblue;    
+            background: skyblue;
         }
+
         /*input {
             width: 40px;
             height: 20px;
         }*/
 
-        #content{
-            background-color: skyblue; 
+        #content {
+            background-color: skyblue;
             font-size: 40px;
             font-weight: bold;
             text-align: center;
@@ -40,8 +42,8 @@
         }
 
         /*修改文字背景颜色及文字框大小*/
-        #countDown{
-            background-color: skyblue; 
+        #countDown {
+            background-color: skyblue;
             font-size: 40px;
             font-weight: bold;
             text-align: center;
@@ -62,13 +64,13 @@
             margin: 10px 10px;
         }
 
-        #countDown div{
+        #countDown div {
             padding: 15px;
             margin: 10px 10px;
         }
 
         #countDown span {
-            display:inline-block;
+            display: inline-block;
             /*color: pink;*/
             background-color: #333;
             color: #EEEEEE;
@@ -79,6 +81,7 @@
         }
     </style>
 </head>
+
 <body>
     <div id="content">
         <p>珍惜每一秒钟</p>
@@ -88,38 +91,39 @@
 
     <div id="countDown">
         <!-- 修改倒计时主题 -->
-        <p>距离【目标日期】：<span id ="targetDate"></span></p>
+        <p>距离【目标日期】：<span id="targetDate"></span></p>
         <!-- <br> -->
         <div>
             <span id="day"></span>天
             <span id="hour"></span>时
             <span id="minute"></span>分
-            <span id="second"></span>秒    
+            <span id="second"></span>秒
         </div>
 
         <p id="timer"></p>
-        
+
     </div>
 </body>
 <script>
 
-    (function () {      
+    (function () {
         //获取目标时间
-        var targetDate = new Date("2022-11-20 11:00:00");
-        document.getElementById("targetDate").innerHTML="2022-11-20 11:00:00";
+        var targetDateTime = "2022-12-30 11:00:00";
+        var targetDate = new Date(targetDateTime);
+        document.getElementById("targetDate").innerHTML = targetDateTime;
         // 000表示每隔一秒变化一次，单位为毫秒
         countDown();
         // setInterval(countDown(targetDate) , 1000);
-        setInterval(countDown , 1000);
+        setInterval(countDown, 1000);
 
         /*倒计时函数*/
-        function countDown(){
+        function countDown() {
             // 获取当前时间
             var presentDate = new Date();
             // 获取时间戳
             var targetTime = targetDate.getTime();
             var presenTime = presentDate.getTime();
-            var allTime = targetTime - presenTime;          
+            var allTime = targetTime - presenTime;
             var allSecond = parseInt(allTime / 1000);
             var day = size(parseInt(allSecond / 3600 / 24));
             var hour = size(parseInt(allSecond / 3600 % 24));
@@ -133,9 +137,9 @@
 
         function size(num) {
             return num < 10 & num >= 0 ? '0' + num : num;
-        } 
+        }
 
-    } ())
+    }())
 
 </script>
 
