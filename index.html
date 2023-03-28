@@ -92,6 +92,7 @@
     <div id="countDown">
         <!-- 修改倒计时主题 -->
         <p>距离【目标日期】：<span id="targetDate"></span></p>
+        <!-- <p>面试准备时间：<span id="prepareTime"></span></p> -->
         <!-- <br> -->
         <div>
             <span id="day"></span>天
@@ -108,7 +109,7 @@
 
     (function () {
         //获取目标时间
-        var targetDateTime = "2023-03-31 11:00:00";
+        var targetDateTime = "2023-05-31 11:00:00";
         var targetDate = new Date(targetDateTime);
         document.getElementById("targetDate").innerHTML = targetDateTime;
         // 000表示每隔一秒变化一次，单位为毫秒
