@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: LXGW WenKai, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,7 +197,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: LXGW WenKai, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -1075,7 +1075,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: LXGW WenKai, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1745,7 +1745,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: LXGW WenKai, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1932,7 +1932,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: LXGW WenKai, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2598,4 +2598,46 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+.headband {
+  margin-bottom: 10px;
+}
+.headband {
+  background: var(--body-bg-color);
+}
+header.header {
+  border-radius: 6px;
+}
+.site-brand-container {
+  border-radius: 6px 6px 0 0;
+}
+.use-motion .sidebar .animated {
+  border-radius: 6px;
+}
+.post-block {
+  border-radius: 6px !important;
+}
+/************ 侧边栏 ************/
+.sidebar-nav li.sidebar-nav-overview {
+  display: none;
+}
+/************ 首页文章列表 ************/
+.post-meta-item-text {
+  display: none;
+}
+.index .post-title,
+.post .post-title {
+  text-align: left;
+  border-left: #1772b4 6px solid;
+  padding-left: 10px;
+}
+.index .post-meta,
+.post .post-meta {
+  justify-content: left;
+}
+.post-body .btn {
+  border: 0px;
+}
+.post-body .btn:hover {
+  background: #1772b4;
 }
