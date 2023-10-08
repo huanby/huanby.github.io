@@ -2605,6 +2605,12 @@ header.header {
 .headband {
   background: var(--body-bg-color);
 }
+/************ 背景 ************/
+/************ 博客标题 ************/
+.site-brand-container {
+  background: #126e82;
+}
+/* 博客标题背景 */
 header.header {
   border-radius: 6px;
 }
