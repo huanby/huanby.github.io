@@ -2599,18 +2599,49 @@ header.header {
     padding: 10px 12px;
   }
 }
+body {
+  background: linear-gradient(0deg, #eef7f2 0%, #c6e6e8 50%, #e5f2fd 100%);
+  background-attachment: fixed;
+}
 .headband {
   margin-bottom: 10px;
 }
 .headband {
-  background: var(--body-bg-color);
+  background-color: transparent;
+}
+#countDown {
+  width: 73%;
+  background-color: #87ceeb;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin: 3px auto 0;
+}
+#countDown p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 100px;
 }
 /************ 背景 ************/
 /************ 博客标题 ************/
 .site-brand-container {
   background: #126e82;
+  background-color: transparent;
+  border-bottom: 1px solid #d8e3e7;
 }
 /* 博客标题背景 */
+.site-title {
+  color: #2f90b9;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+  font-weight: bold;
+}
+.site-subtitle {
+  color: #4d3e3d;
+  font-size: 0.9125em;
+}
 header.header {
   border-radius: 6px;
 }
