@@ -27,7 +27,7 @@
 <meta property="og:description" content="常见的编码格式">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-11T04:49:37.000Z">
-<meta property="article:modified_time" content="2023-10-30T01:57:45.604Z">
+<meta property="article:modified_time" content="2023-11-12T08:37:47.179Z">
 <meta property="article:author" content="何十七">
 <meta property="article:tag" content="计算机基础">
 <meta name="twitter:card" content="summary">
@@ -65,7 +65,7 @@
 
 <div id="countDown">
     <!-- 修改倒计时主题 -->
-    <p>目标日期：【2024-01-10】</p>
+    <p>目标日期：【2024-02-26】</p>
 </div>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
@@ -235,9 +235,15 @@
         <p>常见的编码格式</p>
 <span id="more"></span>
 
-<h1 id="字符与字节"><a href="#字符与字节" class="headerlink" title="字符与字节"></a>字符与字节</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="编码格式"><a href="#编码格式" class="headerlink" title="编码格式"></a>编码格式</h3><h3 id="码点、位、字节、字符、Unicode之间的关系"><a href="#码点、位、字节、字符、Unicode之间的关系" class="headerlink" title="码点、位、字节、字符、Unicode之间的关系"></a>码点、位、字节、字符、Unicode之间的关系</h3><p>字节（Byte）是计算机信息技术用于计量存储容量的一种计量单位，也表示一些计算机编程语言中的数据类型和语言字符。<br>一个字节存储8位无符号数，储存的数值范围为0-255。如同字元一样，字节型态的变数只需要用一个位元组（8位元）的内存空间储存。</p>
+<h1 id="字符与字节"><a href="#字符与字节" class="headerlink" title="字符与字节"></a>字符与字节</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="编码格式"><a href="#编码格式" class="headerlink" title="编码格式"></a>编码格式</h3><h3 id="码点、位、字节、字符、Unicode之间的关系"><a href="#码点、位、字节、字符、Unicode之间的关系" class="headerlink" title="码点、位、字节、字符、Unicode之间的关系"></a>码点、位、字节、字符、Unicode之间的关系</h3><p>码点<br>Unicode 规定了每个字符的数字编号，这个编号被称为 码点(code point)。码点以 U+hex 的形式表示，U+是代表Unicode的前缀，而 hex 是一个16进制数。取值范围是从 U+0000 到 U+10FFFF。</p>
+<p>字符平面<br>目前的Unicode分成了17个编组，也称平面，每个平面有65536个码点。第一个平面是基本多语言平面，范围：U+0000 - U+FFFF，多数常见字符都在该区间。其他平面则为辅助平面，范围：U+10000 到 U+10FFFF，如我们在网上常见 Emoji 表情。</p>
+<p>码元<br>码元(Code Unit)可以理解为对码点进行编码时的最小基本单元，码元是一个整体。而字符编码的作用就是将Unicode码点转换成码元序列。Unicode常用的编码方式有 UTF-8 、UTF-16 和 UTF-32，UTF是Unicode TransferFormat的缩写。UTF-8是8位的单字节码元，UTF-16是16位的双字节码元，UTF-32是32位的四字节码元。</p>
+<p>字节（Byte）是计算机信息技术用于计量存储容量的一种计量单位，也表示一些计算机编程语言中的数据类型和语言字符。<br>一个字节存储8位无符号数，储存的数值范围为0-255。如同字元一样，字节型态的变数只需要用一个位元组（8位元）的内存空间储存。</p>
 <p>字符指类字形单位或符号，包括字母、数字、运算符号、标点符号和其他符号，以及一些功能性符号。字符是电子计算机或无线电通信中字母、数字、符号的统称，其是数据结构中最小的数据存取单位，通常由8个二进制位(一个字节)来表示一个字符。<br>字符是计算机中经常用到的二进制编码形式，也是计算机中最常用到的信息形式。</p>
 <p>ASCII码中，一个英文字母（不分大小写）占一个字节的空间，一个中文汉字占两个字节的空间。一个二进制数字序列，在计算机中作为一个数字单元，一般为8位二进制数，换算为十进制，最小值0，最大值255。<br>UTF-8编码中，一个英文字符等于一个字节，一个中文（含繁体）等于三个字节。<br>Unicode编码中，一个英文等于两个字节，一个中文（含繁体）等于两个字节。</p>
+<p>字符集和字符编码<br>字符集就是字符的集合，如常见的 ASCII字符集，GB2312字符集，Unicode字符集等。这些不同字符集之间最大的区别是所包含的字符数量的不同。</p>
+<p>字符编码则代表字符集的实际编码规则，是用于计算机解析字符的，如 GB2312，GBK，UTF-8 等。字符编码的本质就是如何使用二进制字节来表示字符的问题。</p>
+<p>字符集和编码是一对多的关系，同一字符集可能有多种字符编码，如Unicode字符集就有 UTF-8，UTF-16 等。</p>
 
     </div>
 
